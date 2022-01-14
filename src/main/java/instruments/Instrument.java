@@ -6,12 +6,14 @@ public class Instrument implements IPlay {
     private String brand;
     private String model;
     private String range;
+    private ClassificationType classification;
 
-    public Instrument(String name, String brand, String model, String range) {
+    public Instrument(String name, String brand, String model, String range, ClassificationType classification) {
         this.name = name;
         this.brand = brand;
         this.model = model;
         this.range = range;
+        this.classification = classification;
     }
 
     public String getName() {
@@ -44,6 +46,14 @@ public class Instrument implements IPlay {
 
     public void setRange(String range) {
         this.range = range;
+    }
+
+    public ClassificationType getClassification() {
+        return classification;
+    }
+
+    public void setClassification(ClassificationType classification) {
+        this.classification = classification;
     }
 
     public String play() {
