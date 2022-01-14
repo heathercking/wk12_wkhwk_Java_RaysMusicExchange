@@ -1,6 +1,6 @@
 package instruments;
 
-public class Instrument implements IPlay {
+public abstract class Instrument implements IPlay {
 
     private String name;
     private String brand;
@@ -56,7 +56,6 @@ public class Instrument implements IPlay {
         this.classification = classification;
     }
 
-    public String play() {
-        return null;
-    }
+    public abstract String play();
+
 }
