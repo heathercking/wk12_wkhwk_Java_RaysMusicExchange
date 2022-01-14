@@ -46,4 +46,12 @@ public class ShopTest {
         shop.removeProductFromStock(clarinet);
         assertEquals(2, shop.getProductCount());
     }
+
+    @Test
+    public void canCalculateTotalPotentialProfitOfShop() {
+        shop.addProductToStock(clarinet);
+        shop.addProductToStock(violin);
+        shop.addProductToStock(reeds);
+        assertEquals(2015.00, shop.calculateTotalPotentialProfit(), 0.0);
+    }
 }

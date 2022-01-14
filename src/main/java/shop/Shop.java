@@ -21,4 +21,16 @@ public class Shop {
     public int getProductCount() {
         return this.stock.size();
     }
+
+    public ArrayList<ISell> getStockList() {
+        return this.stock;
+    }
+
+    public double calculateTotalPotentialProfit() {
+        double total = 0;
+        for (ISell product : this.stock) {
+            total += product.calculateMarkup();
+        }
+        return total;
+    }
 }
