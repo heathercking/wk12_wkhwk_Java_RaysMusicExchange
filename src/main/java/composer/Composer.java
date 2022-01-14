@@ -32,11 +32,19 @@ public class Composer {
         this.genre = genre;
     }
 
-//    public ArrayList<SheetMusic> getCompositions() {
-//        return compositions;
-//    }
-//
-//    public void setCompositions(ArrayList<SheetMusic> compositions) {
-//        this.compositions = compositions;
-//    }
+    public ArrayList<SheetMusic> getCompositions() {
+        return compositions;
+    }
+
+    public int compositionsCount() {
+        return this.compositions.size();
+    }
+
+    public void addComposition(SheetMusic composition) {
+        this.compositions.add(composition);
+    }
+
+    public void removeComposition(SheetMusic composition) {
+        this.compositions.remove(composition);
+    }
 }
