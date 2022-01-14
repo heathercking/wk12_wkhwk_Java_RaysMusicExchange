@@ -91,5 +91,10 @@ public class ClarinetTest {
         assertEquals("Leather", clarinet.getKeyPads());
     }
 
+    @Test
+    public void canPlay() {
+        assertEquals("toot toot!", clarinet.play());
+    }
+
 
 }
