@@ -58,7 +58,7 @@ public abstract class Product implements ISell {
     public void setSalePrice(double salePrice) {
         this.salePrice = salePrice;
     }
-    
+
     public double calculateMarkup() {
         return this.salePrice - this.purchasePrice;
     }
