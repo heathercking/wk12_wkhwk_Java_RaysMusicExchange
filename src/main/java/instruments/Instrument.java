@@ -2,27 +2,18 @@ package instruments;
 
 public abstract class Instrument implements IPlay {
 
-    private String name;
     private String brand;
     private String model;
     private String range;
     private ClassificationType classification;
 
-    public Instrument(String name, String brand, String model, String range, ClassificationType classification) {
-        this.name = name;
+    public Instrument(String brand, String model, String range, ClassificationType classification) {
         this.brand = brand;
         this.model = model;
         this.range = range;
         this.classification = classification;
     }
 
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
 
     public String getBrand() {
         return brand;

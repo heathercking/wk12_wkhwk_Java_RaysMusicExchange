@@ -6,8 +6,8 @@ public class Clarinet extends Instrument {
     private String material;
     private String keyPads;
 
-    public Clarinet(String name, String brand, String model, String range, ClassificationType classification, String key, String material, String keyPads) {
-        super(name, brand, model, range, classification);
+    public Clarinet(String brand, String model, String range, ClassificationType classification, String key, String material, String keyPads) {
+        super(brand, model, range, classification);
         this.key = key;
         this.material = material;
         this.keyPads = keyPads;
@@ -40,5 +40,5 @@ public class Clarinet extends Instrument {
     public String play() {
         return "toot toot!";
     }
-    
+
 }
