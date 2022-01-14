@@ -96,5 +96,10 @@ public class ClarinetTest {
         assertEquals("toot toot!", clarinet.play());
     }
 
+    @Test
+    public void canCalculateMarkup() {
+        assertEquals(1000.00, clarinet.calculateMarkup(), 0.0);
+    }
+
 
 }

@@ -73,4 +73,9 @@ public class TimpaniTest {
     public void canPlay() {
         assertEquals("bang bang!", timpani.play());
     }
+
+    @Test
+    public void canCalculateMarkup() {
+        assertEquals(2000.00, timpani.calculateMarkup(), 0.0);
+    }
 }
