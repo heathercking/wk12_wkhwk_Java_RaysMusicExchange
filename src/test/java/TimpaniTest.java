@@ -68,7 +68,7 @@ public class TimpaniTest {
         timpani.setSize(29);
         assertEquals(29, timpani.getSize());
     }
-    
+
     @Test
     public void canPlay() {
         assertEquals("bang bang!", timpani.play());
