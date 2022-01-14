@@ -75,6 +75,16 @@ public class TimpaniTest {
     }
 
     @Test
+    public void canGetPurchasePrice() {
+        assertEquals(2000.00, timpani.getPurchasePrice(), 0.0);
+    }
+
+    @Test
+    public void cabGetSalePrice() {
+        assertEquals(4000.00, timpani.getSalePrice(), 0.0);
+    }
+
+    @Test
     public void canCalculateMarkup() {
         assertEquals(2000.00, timpani.calculateMarkup(), 0.0);
     }

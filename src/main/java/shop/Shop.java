@@ -1,5 +1,7 @@
 package shop;
 
+import products.Reeds;
+
 import java.util.ArrayList;
 
 public class Shop {
@@ -32,5 +34,10 @@ public class Shop {
             total += product.calculateMarkup();
         }
         return total;
+    }
+
+
+    public double applyDiscount(ISell product, DiscountType discount) {
+        return (product.getSalePrice() / 100) * discount.getDiscount();
     }
 }

@@ -97,6 +97,16 @@ public class ClarinetTest {
     }
 
     @Test
+    public void canGetPurchasePrice() {
+        assertEquals(1000.00, clarinet.getPurchasePrice(), 0.0);
+    }
+
+    @Test
+    public void cabGetSalePrice() {
+        assertEquals(2000.00, clarinet.getSalePrice(), 0.0);
+    }
+
+    @Test
     public void canCalculateMarkup() {
         assertEquals(1000.00, clarinet.calculateMarkup(), 0.0);
     }

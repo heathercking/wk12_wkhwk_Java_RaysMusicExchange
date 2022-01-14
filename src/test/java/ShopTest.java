@@ -7,6 +7,7 @@ import org.junit.Test;
 import products.InstrumentAccessory;
 import products.Reeds;
 import products.SheetMusic;
+import shop.DiscountType;
 import shop.Shop;
 
 import static org.junit.Assert.assertEquals;
@@ -53,5 +54,10 @@ public class ShopTest {
         shop.addProductToStock(violin);
         shop.addProductToStock(reeds);
         assertEquals(2015.00, shop.calculateTotalPotentialProfit(), 0.0);
+    }
+
+    @Test
+    public void canApplyDiscount() {
+        assertEquals(24.00, shop.applyDiscount(reeds, DiscountType.TWENTY), 0.0);
     }
 }

@@ -59,4 +59,12 @@ public abstract class Instrument implements IPlay, ISell {
         return this.salePrice - this.purchasePrice;
     }
 
+    public double getSalePrice() {
+        return this.salePrice;
+    }
+
+    public double getPurchasePrice() {
+        return this.purchasePrice;
+    }
+
 }

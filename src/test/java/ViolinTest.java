@@ -86,6 +86,16 @@ public class ViolinTest {
     }
 
     @Test
+    public void canGetPurchasePrice() {
+        assertEquals(1000.00, violin.getPurchasePrice(), 0.0);
+    }
+
+    @Test
+    public void cabGetSalePrice() {
+        assertEquals(2000.00, violin.getSalePrice(), 0.0);
+    }
+
+    @Test
     public void canCalculateMarkup() {
         assertEquals(1000.00, violin.calculateMarkup(), 0.0);
     }
