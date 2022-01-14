@@ -18,4 +18,7 @@ public class Shop {
         this.stock.remove(product);
     }
 
+    public int getProductCount() {
+        return this.stock.size();
+    }
 }

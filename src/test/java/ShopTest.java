@@ -9,6 +9,8 @@ import products.Reeds;
 import products.SheetMusic;
 import shop.Shop;
 
+import static org.junit.Assert.assertEquals;
+
 public class ShopTest {
 
     Shop shop;
@@ -33,5 +35,15 @@ public class ShopTest {
     @Test
     public void canAddProductToStock() {
         shop.addProductToStock(clarinet);
+        assertEquals(1, shop.getProductCount());
+    }
+
+    @Test
+    public void canRemoveProductFromStock() {
+        shop.addProductToStock(clarinet);
+        shop.addProductToStock(violin);
+        shop.addProductToStock(reeds);
+        shop.removeProductFromStock(clarinet);
+        assertEquals(2, shop.getProductCount());
     }
 }
