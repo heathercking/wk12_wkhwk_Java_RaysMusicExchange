@@ -1,17 +1,23 @@
 package instruments;
 
-public abstract class Instrument implements IPlay {
+import shop.ISell;
+
+public abstract class Instrument implements IPlay, ISell {
 
     private String brand;
     private String model;
     private String range;
     private ClassificationType classification;
+    private double purchasePrice;
+    private double salePrice;
 
-    public Instrument(String brand, String model, String range, ClassificationType classification) {
+    public Instrument(String brand, String model, String range, ClassificationType classification, double purchasePrice, double salePrice) {
         this.brand = brand;
         this.model = model;
         this.range = range;
         this.classification = classification;
+        this.purchasePrice = purchasePrice;
+        this.salePrice = salePrice;
     }
 
 
@@ -48,5 +54,9 @@ public abstract class Instrument implements IPlay {
     }
 
     public abstract String play();
+
+    public double calculateMarkup() {
+        return this.salePrice - this.purchasePrice;
+    }
 
 }

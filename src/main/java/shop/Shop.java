@@ -10,5 +10,12 @@ public class Shop {
         this.stock = new ArrayList<>();
     }
 
+    public void addProductToStock(ISell product) {
+        this.stock.add(product);
+    }
+
+    public void removeProductFromStock(ISell product) {
+        this.stock.remove(product);
+    }
 
 }

@@ -15,8 +15,8 @@ public class ReedsTest {
 
     @Before
     public void before() {
-        clarinet = new Clarinet("Selmer", "CL211", "Intermediate", ClassificationType.WOODWIND, "BFlat", "Wood", "Felt");
-        violin = new Violin("Stentor", "1018 Student", "Standard", ClassificationType.STRING, "4/4", "Helicore");
+        clarinet = new Clarinet("Selmer", "CL211", "Intermediate", ClassificationType.WOODWIND, 1000.00, 2000.00, "BFlat", "Wood", "Felt");
+        violin = new Violin("Stentor", "1018 Student", "Standard", ClassificationType.STRING, 1000.00, 2000.00,"4/4", "Helicore");
         reeds = new Reeds("Rico Royal", "box of 10", clarinet, 15.00, 30.00, "3b", "Rico");
     }
 

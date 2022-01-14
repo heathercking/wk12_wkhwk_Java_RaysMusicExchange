@@ -16,7 +16,7 @@ public class ComposerTest {
 
     @Before
     public void before() {
-        clarinet = new Clarinet("Selmer", "CL211", "Intermediate", ClassificationType.WOODWIND, "BFlat", "Wood", "Felt");
+        clarinet = new Clarinet("Selmer", "CL211", "Intermediate", ClassificationType.WOODWIND, 1000.00, 2000.00, "BFlat", "Wood", "Felt");
         composer = new Composer("Mozart", "Classical");
         sheetMusic = new SheetMusic("Clarinet Concerto", "Bla bla bla", clarinet, 5.00, 10.00, composer, "Edition Peters");
     }

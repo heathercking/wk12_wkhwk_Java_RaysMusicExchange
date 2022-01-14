@@ -11,7 +11,7 @@ public class TimpaniTest {
 
     @Before
     public void before() {
-        timpani = new Timpani("Adams", "TP123", "Beginner", ClassificationType.PERCUSSION, 32);
+        timpani = new Timpani("Adams", "TP123", "Beginner", ClassificationType.PERCUSSION, 2000.00, 4000.00, 32);
     }
 
     @Test

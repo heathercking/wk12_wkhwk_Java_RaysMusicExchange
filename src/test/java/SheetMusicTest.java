@@ -22,8 +22,8 @@ public class SheetMusicTest {
     public void before() {
         composer1 = new Composer("Mozart", "Classical");
         composer2 = new Composer("Rachmaninov", "Romantic");
-        clarinet = new Clarinet("Selmer", "CL211", "Intermediate", ClassificationType.WOODWIND, "BFlat", "Wood", "Felt");
-        violin = new Violin("Stentor", "1018 Student", "Standard", ClassificationType.STRING, "4/4", "Helicore");
+        clarinet = new Clarinet("Selmer", "CL211", "Intermediate", ClassificationType.WOODWIND, 1000.00, 2000.00, "BFlat", "Wood", "Felt");
+        violin = new Violin("Stentor", "1018 Student", "Standard", ClassificationType.STRING, 1000.00, 2000.00,"4/4", "Helicore");
         sheetMusic = new SheetMusic("Clarinet Concerto", "Bla bla bla", clarinet, 5.00, 10.00, composer1, "Edition Peters");
     }
 

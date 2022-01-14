@@ -5,8 +5,8 @@ public class Violin extends Instrument {
     private String size;
     private String stringMake;
 
-    public Violin(String brand, String model, String range, ClassificationType classification, String size, String stringMake) {
-        super(brand, model, range, classification);
+    public Violin(String brand, String model, String range, ClassificationType classification, double purchasePrice, double salePrice, String size, String stringMake) {
+        super(brand, model, range, classification, purchasePrice, salePrice);
         this.size = size;
         this.stringMake = stringMake;
     }

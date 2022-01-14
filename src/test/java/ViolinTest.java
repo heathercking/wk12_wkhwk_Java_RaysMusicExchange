@@ -11,7 +11,7 @@ public class ViolinTest {
 
     @Before
     public void before() {
-        violin = new Violin("Stentor", "1018 Student", "Standard", ClassificationType.STRING, "4/4", "Helicore");
+        violin = new Violin("Stentor", "1018 Student", "Standard", ClassificationType.STRING, 1000.00, 2000.00,"4/4", "Helicore");
     }
 
     @Test
